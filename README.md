@@ -8,4 +8,5 @@ To run this assembler use:
 dune exec assembler
 ```
 Enter your Hack code.
+
 To terminate the assembler use ctrl+d 
