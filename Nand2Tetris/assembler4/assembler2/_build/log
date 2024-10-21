@@ -1,0 +1,740 @@
+# dune build --watch
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/112301009/.cache/dune/db
+# Workspace root: /home/112301009/Downloads/assembler4/assembler2
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+# Attempted to add watch to non-existent directory
+# /home/112301009/.nix-profile.
+# Attempted to add watch to non-existent directory
+# /home/112301009/.nix-profile.
+$ /usr/local/bin/ocamlc.opt -config > /tmp/dune_875ccc_output
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -o lib/jack/.vm.objs/byte/vm.cmo -c -impl lib/jack/vm.ml-gen)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/jack/.vm.objs/native/vm.cmx -c -impl lib/jack/vm.ml-gen)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/assembler.cma lib/.assembler.objs/byte/assembler.cmo lib/.assembler.objs/byte/assembler__Ast.cmo lib/.assembler.objs/byte/assembler__Parser.cmo lib/.assembler.objs/byte/assembler__Machine.cmo)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/native/vm__Ast.cmx -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/assembler.cmxs lib/assembler.cmxa)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 5-18:
+> 1 | open Assembler.Ast
+>          ^^^^^^^^^^^^^
+> Error: Unbound module Assembler
+[2]
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 5-18:
+> 1 | open Assembler.Ast
+>          ^^^^^^^^^^^^^
+> Error: Unbound module Assembler
+[2]
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/native/vm__Ast.cmx -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 3, characters 5-5:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 3, characters 14-14:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 3, characters 15-15:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 4, characters 0-0:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 4, characters 2-2:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 4, characters 4-12:
+> 4 |   | function
+>         ^^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 4, characters 4-11:
+> 4 |   | unction
+>         ^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+>
+> File "lib/jack/translate.ml", line 2, characters 0-8:
+> 2 | open Ast
+>     ^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Vm.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 4, characters 16-16:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 4, characters 16-24:
+> 4 |   | Function of failwith
+>                     ^^^^^^^^
+> Error: Unbound type constructor failwith
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 5, characters 3-3:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 5, characters 4-4:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 5, characters 13-15:
+> 5 |   | Label of lo
+>                  ^^
+> Error: Unbound type constructor lo
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 6, characters 4-4:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 6, characters 4-11:
+> 6 |   | segment of 
+>         ^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 6, characters 4-11:
+> 6 |   | segment of segmen
+>         ^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 6, characters 4-11:
+> 6 |   | segment of segment
+>         ^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 7, characters 4-4:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 8, characters 3-3:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 8, characters 4-4:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 8, characters 13-16:
+> 8 |   | Constant int
+>                  ^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 4-4:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 6-6:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 10-10:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 14-14:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 16-16:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 10-11:
+> 9 | let sourc f l = A
+>               ^
+> Error (warning 27 [unused-var-strict]): unused variable f.
+>
+> File "lib/jack/translate.ml", line 9, characters 12-13:
+> 9 | let sourc f l = A
+>                 ^
+> Error (warning 27 [unused-var-strict]): unused variable l.
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-19:
+> 9 | let sourc f l = Ast
+>                     ^^^
+> Error: Unbound constructor Ast
+> Hint: Did you mean At?
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 20-20:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 16-16:
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-21:
+> 9 | let sourc f l = instr
+>                     ^^^^^
+> Error: Unbound value instr
+> Hint: Did you mean incr?
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs 
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs f l
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+> File "lib/jack/translate.ml", line 9, characters 27-28:
+> 9 | let sourc f l = Asinstrs f l
+>                                ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-26:
+> 9 | let sourc f l = Ast.instrs f l
+>                     ^^^^^^^^^^
+> Error: Unbound value Ast.instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 4, characters 6-7:
+> 4 | type  = string (*functions*)
+>           ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 17, characters 11-12:
+> 17 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 5, characters 0-4:
+> 5 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 6, characters 0-4:
+> 6 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 6, characters 0-4:
+> 6 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 5, characters 3-4:
+> 5 |   |'f 
+>        ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 6, characters 0-4:
+> 6 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 6, characters 0-4:
+> 6 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 6, characters 0-4:
+> 6 | type l = string (*labels*)
+>     ^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 18, characters 11-12:
+> 18 |   |Call of f*n
+>                 ^
+> Error: Unbound type constructor f
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 14, characters 12-13:
+> 14 |   | Goto of l
+>                  ^
+> Error: Unbound type constructor l
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 13, characters 12-13:
+> 13 |   | Goto of l
+>                  ^
+> Error: Unbound type constructor l
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 13, characters 12-13:
+> 13 |   | Goto of l
+>                  ^
+> Error: Unbound type constructor l
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 13, characters 12-13:
+> 13 |   | Goto of l
+>                  ^
+> Error: Unbound type constructor l
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-26:
+> 9 | let sourc f l = Ast.instrs f l
+>                     ^^^^^^^^^^
+> Error: Unbound value Ast.instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 19, characters 32-40:
+> 19 | type blockvm = {label:l; body : f instrs list ;   }
+>                                      ^^^^^^^^
+> Error: The type constructor instrs expects 0 argument(s),
+>        but is here applied to 1 argument(s)
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 7, characters 13-14:
+> 7 | type  instrs f  =
+>                  ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+> File "lib/jack/ast.ml", line 19, characters 32-40:
+> 19 | type blockvm = {label:l; body : f instrs list ;   }
+>                                      ^^^^^^^^
+> Error: The type constructor instrs expects 0 argument(s),
+>        but is here applied to 1 argument(s)
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-26:
+> 9 | let sourc f l = Ast.instrs f l
+>                     ^^^^^^^^^^
+> Error: Unbound value Ast.instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/native/vm__Ast.cmx -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/jack/vm.cma lib/jack/.vm.objs/byte/vm.cmo lib/jack/.vm.objs/byte/vm__Translate.cmo lib/jack/.vm.objs/byte/vm__Ast.cmo)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/native/vm__Translate.cmx -c -impl lib/jack/translate.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/jack/vm.cmxa lib/jack/.vm.objs/native/vm.cmx lib/jack/.vm.objs/native/vm__Translate.cmx lib/jack/.vm.objs/native/vm__Ast.cmx)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib/jack -o lib/jack/vm.cmxs lib/jack/vm.cmxa)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.assembler.objs/byte -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/assembler.cmxa lib/jack/vm.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 0-2:
+> 20 | (* type function = {name : f;numofvar:n; } 
+>      ^^
+> Error: Comment not terminated
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 6-14:
+> 20 |  type function = {name : f;numofvar:n; } 
+>            ^^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 5-13:
+> 20 | type function = {name : f;numofvar:n; } 
+>           ^^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 5-13:
+> 20 | type function = {name : f;  numofvar:n; } 
+>           ^^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 5-13:
+> 20 | type function = {name : f;  numofvar:n; } 
+>           ^^^^^^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+> File "lib/jack/ast.ml", line 20, characters 5-8:
+> 20 | type fun = {name : f;  numofvar:n; } 
+>           ^^^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/ast.ml) > _build/default/lib/jack/.vm.objs/vm__Ast.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Ast.cmo -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/jack/vm.cma lib/jack/.vm.objs/byte/vm.cmo lib/jack/.vm.objs/byte/vm__Translate.cmo lib/jack/.vm.objs/byte/vm__Ast.cmo)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/native/vm__Ast.cmx -c -impl lib/jack/ast.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/jack/vm.cmxa lib/jack/.vm.objs/native/vm.cmx lib/jack/.vm.objs/native/vm__Translate.cmx lib/jack/.vm.objs/native/vm__Ast.cmx)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib/jack -o lib/jack/vm.cmxs lib/jack/vm.cmxa)
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.assembler.objs/byte -I lib/jack/.vm.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.assembler.objs/byte -I lib/.assembler.objs/native -I lib/jack/.vm.objs/byte -I lib/jack/.vm.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/assembler.cmxa lib/jack/vm.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-26:
+> 9 | let sourc f l = Ast.instrs f l
+>                     ^^^^^^^^^^
+> Error: Unbound value Ast.instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs f l
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs f l
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 16-22:
+> 9 | let sourc f l = instrs
+>                     ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 9, characters 17-23:
+> 9 | let source f l = instrs
+>                      ^^^^^^
+> Error: Unbound value instrs
+[2]
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib/jack/translate.ml) > _build/default/lib/jack/.vm.objs/vm__Translate.impl.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/jack/.vm.objs/byte -I lib/.assembler.objs/byte -no-alias-deps -opaque -open Vm -o lib/jack/.vm.objs/byte/vm__Translate.cmo -c -impl lib/jack/translate.ml)
+> File "lib/jack/translate.ml", line 1, characters 0-18:
+> 1 | open Assembler.Ast
+>     ^^^^^^^^^^^^^^^^^^
+> Error (warning 33 [unused-open]): unused open Assembler.Ast.
+[2]
